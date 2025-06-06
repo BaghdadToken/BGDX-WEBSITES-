@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baghdad Token (BGDX)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      background: url('1000029077.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .hero {
+      text-align: center;
+      padding: 10vh 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background: #d4af37;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 3rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .countdown, .gempad, .tokenomics, .roadmap, .team, .contact {
+      margin-bottom: 3rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BGDX</n>
+    ><a href="https://x.com/BaghdadToken?t=N5HVtIhb-vHnV5BdYEMrrQ&s=09" target="_blank" class="btn">Follow Us</a>
+  </header>
+
+  <div class="hero">
+    <h1>Baghdad Token (BGDX)</h1>
+    <p>Inspired by Baghdad’s Legacy. Built for the Blockchain Future.</p>
+    <button class="btn" onclick="window.location.href='https://gempad.app/presale/0x1E50a00d736E073Df757dA9c5513cf0E9196A859?network=BNB_Smart_Chain';">Join the Presale</button>
+  <a href="whitepaper.pdf" target="_blank" style="margin-top: 20px; display: inline-block; padding: 10px 20px; background-color: #d4af37; color: black; text-decoration: none; border-radius: 8px;">
+  Read Whitepaper
+</a>
+
+  </div>
+
+  <section class="countdown">
+    <h2>Presale Countdown</h2>
+    <div id="countdown-timer"></div>
+  </section>
+
+  <section class="gempad">
+    <h2>Live Presale Progress</h2>
+    <iframe src="https://gempad.app/presale/0x1E50a00d736E073Df757dA9c5513cf0E9196A859?network=BNB_Smart_Chain" style="width:100%; height:600px; border:none;"></iframe>
+  </section>
+
+  <section class="tokenomics">
+    <h2>Tokenomics</h2>
+    <ul>
+      <li>Total Supply: 10,000,000 BGDX</li>
+      <li>Presale: 5,000,000 BGDX (50%)</li>
+      <li>Team: 5% (Locked)</li>
+      <li>NFT/Game Development: 19.35% (Unlocked)</li>
+      <li>Liquidity & Listing: 25.65%</li>
+    </ul>
+  </section>
+
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>Q2 2025 - Presale Launch</li>
+      <li>Q3 2025 - Listing & NFT Integration</li>
+      <li>Q4 2025 - Baghdad Game Beta</li>
+      <li>2026 - Full Game Release + Expansion</li>
+    </ul>
+  </section>
+
+  <section class="team">
+    <h2>Our Team</h2>
+    <p>The team behind BGDX is a group of blockchain developers, NFT artists, and game designers focused on bringing Baghdad’s history to life using web3 innovation.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:baghdadtoken@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    const targetDate = new Date("2025-07-01T00:00:00").getTime();
+    const timer = document.getElementById("countdown-timer");
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      } else {
+        timer.innerHTML = "Presale Started!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
